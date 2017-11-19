@@ -62,7 +62,7 @@ case 1:
 case 2:
     compteur(&ligne);// appel de la fonction permettant de compter le nombre de ligne inscrit dans le fichier
     lecture(&pouls, &millis ,&pouls2, &millis2,ligne);// appel de la fonction permettant de lire le fichier .csv et remplir les tableaux de valeurs
-    printf("trie dans l'ordre croissant du pouls:\n");
+    printf("tri%c dans l'ordre croissant du pouls:\n",a);
     croissantp(&pouls, &millis, &pouls2,&millis2,ligne);// appel de la fonction permettant de trié le pouls dans l'ordre croissant et affiché le tableau trié
     printf("\n");
 
@@ -71,7 +71,7 @@ case 2:
 case 3:
     compteur(&ligne);// appel de la fonction permettant de compter le nombre de ligne inscrit dans le fichier
     lecture(&pouls, &millis ,&pouls2, &millis2,ligne);// appel de la fonction permettant de lire le fichier .csv et remplir les tableaux de valeurs
-    printf("trie dans l'ordre d%ccroissant du pouls:\n",a);
+    printf("tri%c dans l'ordre d%ccroissant du pouls:\n",a,a);
     decroissantp(&pouls, &millis,&pouls2,&millis2, ligne);// appel de la fonction permettant de trié le pouls dans l'ordre décroissant et affiché le tableau trié
     printf("\n");
     break;
@@ -79,7 +79,7 @@ case 3:
 case 4:
     compteur(&ligne);// appel de la fonction permettant de compter le nombre de ligne inscrit dans le fichier
     lecture(&pouls, &millis ,&pouls2, &millis2,ligne);// appel de la fonction permettant de lire le fichier .csv et remplir les tableaux de valeurs
-    printf("trie dans l'ordre croissant du temps:\n");
+    printf("tri%c dans l'ordre croissant du temps:\n",a);
     croissantm(&pouls,&millis,&pouls2,&millis2,ligne);// appel de la fonction permettant de trié le temps dans l'ordre croissant et affiché le tableau trié
     printf("\n");
     break;
@@ -87,7 +87,7 @@ case 4:
 case 5:
     compteur(&ligne);// appel de la fonction permettant de compter le nombre de ligne inscrit dans le fichier
     lecture(&pouls, &millis ,&pouls2, &millis2,ligne);// appel de la fonction permettant de lire le fichier .csv et remplir les tableaux de valeurs
-    printf("trie dans l'ordre d%ccroissant du temps:\n", a);
+    printf("tri%c dans l'ordre d%ccroissant du temps:\n",a,a);
     decroissantm(&pouls, &millis,&millis2,&pouls2,ligne);// appel de la fonction permettant de trié le pouls dans l'ordre décroissant et affiché le tableau trié
     printf("\n");
     break;
